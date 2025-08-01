@@ -1,0 +1,13 @@
+.logo {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #B9BBBE;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(3deg);
+  opacity: 1;
+}

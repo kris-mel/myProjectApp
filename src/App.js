@@ -1,39 +1,19 @@
-import './App.css';
+import styles from './App.module.css';
+import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+import Profile from './Components/Profile/Profile';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Tehnologies />
-    </div>
-  );
-}
-
-const Header = () => {
-  return (
-    <div>
-      <div className="App">
-        <ul>
-          <a href='#s'>HTML</a>
-          <a href='#s'>HTML1</a>
-          <a href='#s'>HTML2</a>
-          <a href='#s'>HTML3</a>
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-const Tehnologies = () => {
-  return (
-    <div>
-      <div className="App">
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>REACT</li>
-        </ul>
+    <div className={styles.layout}>
+      <header className={styles.header}>
+        <Header />
+      </header>
+      <nav className={styles.nav}>
+        <Navbar />
+      </nav>
+      <div className={styles.main}>
+        <Profile />
       </div>
     </div>
   );

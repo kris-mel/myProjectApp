@@ -1,0 +1,30 @@
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;  /* 200px — navbar, остальное — контент */
+    grid-template-rows: 60px 1fr;      /* 60px — хэдер, остальное — основа */
+    grid-template-areas:
+        "h h"
+        "n m";   
+    height: 100vh; /* на весь экран */
+    background: #2b2d31;
+    position: relative; /* нужно для абсолютного позиционирования логотипа */
+}
+
+.header {
+    grid-area: h;
+    background: #3A3D42;
+    padding: 1rem;
+    position: relative; /* нужно для .logo внутри */
+}
+
+.nav {
+    grid-area: n;
+    background: #2F3136;
+    padding: 1rem;
+}
+
+.main {
+    grid-area: m;
+    padding: 1rem;
+    background: #36393F;
+}
