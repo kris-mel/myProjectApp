@@ -1,6 +1,8 @@
+import styles from './Navbar.module.css';
+
 const Navbar = () => {
     return (
-        <div>
+        <div className={styles.layout}>
             <div>
                 <a href='#s'>My profile</a>
             </div>
