@@ -1,26 +1,15 @@
 import styles from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className={styles.layout}>
-            <div>
-                <a href='#s'>My profile</a>
-            </div>
-            <div>
-                <a href='#s'>Message</a>
-            </div>
-            <div>
-                <a href='#s'>Friends</a>
-            </div>
-            <div>
-                <a href='#s'>Music</a>
-            </div>
-            <div>
-                <a href='#s'>Photo</a>
-            </div>
-            <div>
-                <a href='#s'>Communities</a>
-            </div>
+            <Link to='/profile'>My profile </Link>
+            <Link to='/dialogs'>Dialogs</Link>
+            <Link to='/friends'>Friends</Link>
+            <Link to='/music'>Music</Link>
+            <Link to='/photo'>Photo</Link>
+            <Link to='/communities'>Communities</Link>
         </div>
     );
 }
