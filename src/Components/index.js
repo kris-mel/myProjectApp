@@ -1,3 +1,7 @@
+// Этот файл реэкспортирует все компоненты из папки Components.
+// Позволяет импортировать нужные компоненты из одного места в других файлах проекта,
+// чтобы не писать много отдельных импортов с длинными путями.
+
 export { default as Header } from './Header/Header';
 export { default as Navbar } from './Navbar/Navbar';
 export { default as Profile } from './Profile/Profile';
