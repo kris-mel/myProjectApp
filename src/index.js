@@ -1,3 +1,7 @@
+// Точка входа приложения.
+// Рендерит корневой React-компонент (<App />), обернутый в маршрутизатор (<BrowserRouter>).
+// Запускает сбор метрик производительности (reportWebVitals).
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
