@@ -1,12 +1,5 @@
 import styles from './App.module.css';
-import Header from './Components/Header/Header';
-import Navbar from './Components/Navbar/Navbar';
-import Profile from './Components/Profile/Profile';
-import Dialogs from './Components/Dialogs/Dialogs';
-import Friends from './Components/Friends/Friends';
-import Music from './Components/Music/Music';
-import Photo from './Components/Photo/Photo';
-import Communities from './Components/Communities/Communities';
+import { Header, Navbar, Profile, Dialogs, Friends, Music, Photo, Communities } from './Components/index';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {

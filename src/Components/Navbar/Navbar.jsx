@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <div className={styles.layout}>
-            <Link to='/profile'>My profile </Link>
+            <Link to='/profile'>My profile</Link>
             <Link to='/dialogs'>Dialogs</Link>
             <Link to='/friends'>Friends</Link>
             <Link to='/music'>Music</Link>
