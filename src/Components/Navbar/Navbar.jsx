@@ -1,17 +1,17 @@
-import styles from './Navbar.module.css';
-import { Link } from 'react-router-dom';
+import styles from './Navbar.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <div className={styles.layout}>
-            <Link to='/profile'>My profile</Link>
-            <Link to='/dialogs'>Dialogs</Link>
-            <Link to='/friends'>Friends</Link>
-            <Link to='/music'>Music</Link>
-            <Link to='/photo'>Photo</Link>
-            <Link to='/communities'>Communities</Link>
+            <NavLink to='/profile'>My profile</NavLink>
+            <NavLink to='/chatPage'>chatPage</NavLink>
+            <NavLink to='/friendsPage'>FriendsPage</NavLink>
+            <NavLink to='/musicPage'>MusicPage</NavLink>
+            <NavLink to='/photoPage'>PhotoPage</NavLink>
+            <NavLink to='/communitiesPage'>CommunitiesPage</NavLink>
         </div>
     );
 }
 
-export default Navbar;
+export default Navbar

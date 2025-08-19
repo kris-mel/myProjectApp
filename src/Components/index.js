@@ -4,9 +4,9 @@
 
 export { default as Header } from './Header/Header';
 export { default as Navbar } from './Navbar/Navbar';
-export { default as Profile } from './Profile/Profile';
-export { default as Dialogs } from './Dialogs/Dialogs';
-export { default as Friends } from './Friends/Friends';
-export { default as Music } from './Music/Music';
-export { default as Photo } from './Photo/Photo';
-export { default as Communities } from './Communities/Communities';
+export { default as ProfilePage } from './ProfilePage/ProfilePage';
+export { default as ChatPage } from './ChatPage/ChatPage';
+export { default as FriendsPage } from './FriendsPage/FriendsPage';
+export { default as MusicPage } from './MusicPage/MusicPage';
+export { default as PhotoPage } from './PhotoPage/PhotoPage';
+export { default as CommunitiesPage } from './CommunitiesPage/CommunitiesPage';
