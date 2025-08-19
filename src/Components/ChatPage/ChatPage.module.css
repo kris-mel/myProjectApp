@@ -1,0 +1,8 @@
+.chatPageGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 2 колонки: 1 часть - UserInfo, 2 части - Messages */
+  gap: 20px;
+  height: 100vh; /* растянуть на всю высоту */
+  padding: 20px;
+  box-sizing: border-box;
+}
