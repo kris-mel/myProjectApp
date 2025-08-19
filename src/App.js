@@ -1,5 +1,5 @@
 import styles from './App.module.css';
-import { Header, Navbar, Profile, Dialogs, Friends, Music, Photo, Communities } from './Components/index';
+import { Header, Navbar, ProfilePage, ChatPage, FriendsPage, MusicPage, PhotoPage, CommunitiesPage } from './Components/index';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -14,17 +14,18 @@ const App = () => {
       <main className={styles.main}>
         <Routes>
           {/* Главная страница - корневой путь */}
-          <Route path='/' element={<Profile />} />
+          <Route path='/' element={<ProfilePage />} />
 
-          <Route path='/profile'     element={<Profile />} />
-          <Route path='/dialogs'     element={<Dialogs />} />
-          <Route path='/friends'     element={<Friends />} />
-          <Route path='/music'       element={<Music />} />
-          <Route path='/photo'       element={<Photo />} />
-          <Route path='/communities' element={<Communities />} />
+          <Route path='/profilePage'     element={<ProfilePage />} />
+          <Route path='/chatPage'        element={<ChatPage />} />        {/* Список чатов */}
+          <Route path='/chatPage/:id'    element={<ChatPage />} />        {/* Конкретный чат */}
+          <Route path='/friendsPage'     element={<FriendsPage />} />
+          <Route path='/musicPage'       element={<MusicPage />} />
+          <Route path='/photoPage'       element={<PhotoPage />} />
+          <Route path='/communitiesPage' element={<CommunitiesPage />} />
 
-          {/* Маршрут по умолчанию*/}
-          <Route path='*' element={<Profile />} />
+          {/* Маршрут-заглушка, если путь не найден */}
+          <Route path='*' element={<ProfilePage />} />
         </Routes>
       </main>
     </div>
