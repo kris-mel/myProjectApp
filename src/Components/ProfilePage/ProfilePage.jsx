@@ -5,14 +5,16 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 const ProfilePage = (props) => {
     return (
         <div className={styles.layout}>
+
+            {/* Информация о пользователе */}
+            <div><ProfileInfo /></div>
+
+            {/* Посты пользователя */}
             <div>
-                {/* Информация о пользователе */}
-                <ProfileInfo />
-            </div>
-            <div>
-                {/* Посты пользователя */}
-                <MyPosts 
-                    postMessage={props.postMessage}/>
+                <MyPosts
+                    postMessage={props.postMessage}
+                    photoUrl={props.photoUrl}
+                />
             </div>
         </div>
     );

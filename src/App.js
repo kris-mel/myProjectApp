@@ -21,6 +21,9 @@ const App = (props) => {
         { id: 2, message: 'how are you?', initialCount: 15 },
     ]
 
+    // временный массив фотографий
+    const photoUrl = [<img src='https://i.pinimg.com/736x/23/98/d7/2398d75d71c3219583ae91457709d3a0.jpg' /> ]
+
   return (
     <div className={styles.layout}>
       <header className={styles.header}>
@@ -32,10 +35,10 @@ const App = (props) => {
       <main className={styles.main}>
         <Routes>
           {/* Главная страница */}
-          <Route path='/'                element={<ProfilePage postMessage={postMessage}/>} />
+          <Route path='/'                element={<ProfilePage postMessage={postMessage} photoUrl={photoUrl}/>} />
 
           {/* Редирект с /profilePage на главную */}
-          <Route path='/profilePage'     element={<ProfilePage postMessage={postMessage} />} />
+          <Route path='/profilePage'     element={<ProfilePage postMessage={postMessage} photoUrl={photoUrl} />} />
 
           {/* Страница чатов */}
           <Route path='/chatPage'        element={<ChatPage chatUsers={chatUsers} messages={messages} />} />  {/* Список чатов */}
@@ -50,7 +53,7 @@ const App = (props) => {
           <Route path='/communitiesPage' element={<CommunitiesPage />} />
 
           {/* Маршрут-заглушка, если путь не найден */}
-          <Route path='*' element={<ProfilePage postMessage={postMessage}/>} />
+          <Route path='*' element={<ProfilePage postMessage={postMessage} photoUrl={photoUrl}/>} />
         </Routes>
       </main>
     </div>

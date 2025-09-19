@@ -11,7 +11,11 @@ const Post = ({ photoUrl, message, initialCount }) => {
             <div>{message}</div>
 
             {/* Лайки */}
-            <div><LikeButton initialCount={initialCount} /></div>
+            <div>
+                <LikeButton
+                    initialCount={initialCount}
+                />
+            </div>
         </div>
     );
 }
