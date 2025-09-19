@@ -1,8 +1,6 @@
 const MessageList = (props) => {
     return (
-        <div>
-         {props.message}
-        </div>
+        <div>{props.message}</div>
     );
 }
 

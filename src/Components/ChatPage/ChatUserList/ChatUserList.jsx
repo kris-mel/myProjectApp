@@ -1,12 +1,15 @@
 import { NavLink } from 'react-router-dom';
 
 const ChatUserList = (props) => {
-    // формируем путь с id
+    // Формируем путь до конкретного чата по id пользователя
     const path = '/chatPage/' + props.id;
 
     return (
         <div>
-            <img src={props.photoUrl} />
+            {/* Аватар пользователя */}
+            <div><img src={props.photoUrl} /></div>
+
+            {/* Имя пользователя как ссылка на чат с ним */}
             <div>
                 <NavLink to={path}>{props.name}</NavLink>
             </div>
