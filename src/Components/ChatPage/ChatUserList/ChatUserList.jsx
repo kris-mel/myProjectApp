@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
 const ChatUserList = (props) => {
-    let path = '/chatPage/' + props.id;
+    // формируем путь с id
+    const path = '/chatPage/' + props.id;
 
     return (
         <div>
@@ -13,4 +14,4 @@ const ChatUserList = (props) => {
     );
 }
 
-export default ChatUserList
+export default ChatUserList;

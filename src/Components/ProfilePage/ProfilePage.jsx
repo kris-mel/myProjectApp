@@ -2,7 +2,7 @@ import MyPosts from './MyPosts/MyPosts';
 import styles from './Profile.module.css';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
-const ProfilePage = () => {
+const ProfilePage = (props) => {
     return (
         <div className={styles.layout}>
             <div>
@@ -11,7 +11,8 @@ const ProfilePage = () => {
             </div>
             <div>
                 {/* Посты пользователя */}
-                <MyPosts />
+                <MyPosts 
+                    postMessage={props.postMessage}/>
             </div>
         </div>
     );

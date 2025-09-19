@@ -1,7 +1,7 @@
 const MessageList = (props) => {
     return (
         <div>
-         сообщения
+         {props.message}
         </div>
     );
 }
