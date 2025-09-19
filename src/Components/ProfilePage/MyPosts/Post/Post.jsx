@@ -1,19 +1,17 @@
 import styles from './Post.module.css';
 import LikeButton from './LikeButton/LikeButton';
 
-const Post = (props) => {
+const Post = ({ photoUrl, message, initialCount }) => {
     return (
         <div className={styles.item}>
-            <div>
-                 {/* Аватарка автора поста */}
-                <img src='https://i.pinimg.com/736x/23/98/d7/2398d75d71c3219583ae91457709d3a0.jpg' />
-            </div>
+            {/* Аватарка автора поста */}
+            <div>{photoUrl}</div>
+
             {/* Текст поста */}
-            {props.message}
-            <div>
-                {/* Лайки */}
-                <LikeButton initialCount={props.initialCount} />
-            </div>
+            <div>{message}</div>
+
+            {/* Лайки */}
+            <div><LikeButton initialCount={initialCount} /></div>
         </div>
     );
 }
